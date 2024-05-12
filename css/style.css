@@ -1,0 +1,690 @@
+/* Start Global Variable */
+:root {
+    --mainColor: #343434;
+    --secondaryColor: #1c1c1c;
+    --thirdColor: #748182;
+    --fourthColor: #F7F7F7;
+}
+
+/* End Global Variable */
+.container {
+    /* width: 80%; */
+}
+/****************** Start Global Name of Sections ******************/
+#Portfolio h2,
+#Testimonials h2,
+#Team h2,
+#Contact h2,
+#Services h2 {
+    font-family: "Montserrat" "sans-serif";
+    color: var(--mainColor);
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+    font-weight: 900;
+    width: fit-content;
+    margin: auto !important;
+    z-index: 2;
+}
+
+#Portfolio h2::after,
+#Testimonials h2::after,
+#Team h2::after,
+#Contact h2::after,
+#Services h2::after {
+    content: "";
+    position: absolute;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    width: 100%;
+    height: 50%;
+    left: 0;
+    top: 50%;
+    z-index: -1;
+}
+
+/****************** End Global Name of Sections ******************/
+
+
+/****************** Start Header ******************/
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../imgs/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: cover;
+}
+
+header .content p {
+    font-size: 3.125rem;
+    font-weight: 800;
+}
+
+header .content h3 {
+    font-size: 3.75rem;
+    font-weight: 200;
+    /* margin-bottom: 1.875rem; */
+}
+
+header .content .icons li {
+    width: 2.1875rem;
+    height: 2.1875rem;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, .4);
+    font-size: .875rem;
+}
+
+header .content .animationWords {
+    background-color: red;
+    width: 0px;
+    animation: changeWidth 6s infinite ease-in-out;
+    -webkit-animation: changeWidth 6s infinite ease-in-out;
+}
+
+header .content h3::after {
+    content: "";
+    transition: all 3s;
+    background-color: red;
+    animation: changeWord 1s infinite ease-in-out, changeWidth 1s infinite ease-in-out;
+    -webkit-animation: changeWord 1s infinite ease-in-out, changeWidth 1s infinite ease-in-out;
+    -webkit-transition: all 3s;
+    -moz-transition: all 3s;
+    -ms-transition: all 3s;
+    -o-transition: all 3s;
+}
+
+@keyframes changeWord {
+    0% {
+        content: "Larry Daniels";
+        /* width: 0; */
+    }
+
+    50% {
+        content: "Developer";
+        /* width: 50%; */
+    }
+
+    100% {
+        content: "Designer";
+        /* width: 100%; */
+    }
+}
+
+@keyframes changeWidth {
+    0% {
+
+        width: 0;
+    }
+
+    50% {
+        width: 50%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+/****************** End Header ******************/
+/****************** Start About ******************/
+.navbar-brand {
+    font-family: "Montserrat" "sans-serif";
+    font-size: 1.125rem;
+    font-weight: 800;
+    letter-spacing: .0625rem;
+    color: #343434;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-inline: unset;
+    margin-inline: 1.25rem;
+}
+
+.navbar-nav .nav-link.active {
+    position: relative;
+}
+
+.navbar-nav .nav-link.active::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: .1875rem;
+    left: 0;
+    top: 75%;
+    background-color: var(--mainColor);
+}
+
+#about .about-image figure::after {
+    content: "";
+    position: absolute;
+    background-image: url(../imgs/dots.png);
+    width: 80%;
+    height: 80%;
+    background-repeat: repeat;
+    left: -30px;
+    bottom: -35px;
+    z-index: -88;
+
+}
+
+#about .about-image figure {
+    left: 30px;
+}
+
+#about .about-content h2 {
+    font-family: "Montserrat" "sans-serif";
+    font-size: 1.875rem;
+    line-height: 2.0625rem;
+    color: var(--mainColor);
+    font-weight: 800;
+}
+
+#about .about-content p {
+    font-family: "Poppins" "sans-serif";
+}
+
+#about .about-content p.job {
+    letter-spacing: 2px;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    color: var(--thirdColor);
+    font-weight: 400;
+}
+
+#about .about-content p.description {
+    font-size: .9375rem;
+    line-height: 1.5625rem;
+    color: var(--thirdColor);
+    font-weight: 400;
+}
+
+#about .about-content span {
+    font-size: .9375rem;
+    line-height: 1.5rem;
+    color: var(--thirdColor);
+    font-weight: 700;
+}
+
+#about .about-content .btns button {
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+}
+
+#about .about-content .btns button.cv {
+    background-color: var(--secondaryColor);
+
+}
+
+#about .about-content .btns button.cv a {
+    color: #fff;
+}
+
+#about .about-content .btns button.cv:hover {
+    background-color: #fff;
+    border: solid 1px var(--secondaryColor);
+}
+
+#about .about-content .btns button.cv:hover a {
+    color: var(--secondaryColor);
+}
+
+#about .about-content .btns button.contact:hover a {
+    color: #fff !important;
+}
+
+/****************** End About ******************/
+
+
+/****************** Start Services ******************/
+#Services{
+    background-color: var(--fourthColor);
+}
+#Services .content .icon{
+    width: 80px;
+    height: 80px;
+    background-color:#e9e7e6;
+    
+}
+#Services .content .icon,#Services .content .icon i{
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+}
+#Services .content:hover .icon{
+    background-color: var(--secondaryColor) !important;
+}
+#Services .content:hover i{
+    color:#e9e7e6;
+}
+#Services .content h3{
+    font-family: "Montserrat" "sans-serif";
+    font-size: 1.125rem;
+    line-height: 1.25rem;
+    font-weight: 800;
+    color: var(--mainColor);
+}
+#Services .content p{
+    font-family: "Poppins""sans-serif";
+    font-size: .875rem;
+    line-height: 1.4375rem;
+    word-spacing: .125rem;
+    font-weight: 400;
+    color: var(--thirdColor);
+}
+/****************** End Services ******************/
+
+
+/****************** Start Portfolio ******************/
+#Portfolio {
+    font-family: "Montserrat" "sans-serif";
+}
+
+
+
+
+#Portfolio .nav-tabs li button {
+    color: var(--mainColor);
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.4375rem;
+    font-family: "Poppins" "sans-serif";
+}
+
+/* #Portfolio .nav-tabs .nav-link{
+    width: 0%;
+} */
+#Portfolio .nav-tabs .nav-link.active {
+    position: relative;
+    /* width: 0%; */
+}
+
+#Portfolio .nav-tabs .nav-link.active::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: .1875rem;
+    left: 0;
+    top: 90%;
+    background-color: var(--secondaryColor);
+}
+
+#Portfolio #myTabContent .item {
+    transition: all 3s ease;
+    -webkit-transition: all 3s ease;
+    -moz-transition: all 3s ease;
+    -ms-transition: all 3s ease;
+    -o-transition: all 3s ease;
+}
+
+#Portfolio #myTabContent .item .itemLayer {
+    inset: 5px;
+    background-color: rgba(255, 255, 255, .9);
+    opacity: 0;
+    margin-top: 10px;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+}
+
+#Portfolio #myTabContent .item .itemLayer h3 {
+    font-size: .75rem;
+    color: var(--mainColor);
+    line-height: 15px;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+
+#Portfolio #myTabContent .item .itemIcons>* {
+    width: 1.5625rem;
+    height: 1.5625rem;
+}
+
+#Portfolio #myTabContent .item .itemIcons>*:hover {
+    /* color: red !important; */
+    color: var(--secondaryColor) !important;
+    background-color: #fff !important;
+    border: solid 1px var(--secondaryColor) !important;
+    ;
+}
+
+#Portfolio #myTabContent .item .itemIcons {
+    margin-top: 35px;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+}
+
+#Portfolio #myTabContent .item:hover .itemLayer {
+    margin-top: 0;
+    opacity: 1;
+}
+
+#Portfolio #myTabContent .item:hover .itemIcons {
+    margin-top: 10px;
+}
+
+.modal-header {
+    padding-right: 115px;
+
+}
+
+.modal-header .btn-close {
+    cursor: zoom-out;
+}
+
+.modal-body .carousel-control-prev {
+    left: -30%;
+}
+
+.modal-body .carousel-control-next {
+    right: -30%;
+}
+
+.modal-body .carousel-control-prev .carousel-control-prev-icon,
+.modal-body .carousel-control-next .carousel-control-next-icon {
+    background-image: unset;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+}
+
+.modal-body .carousel-control-prev .carousel-control-prev-icon {
+    border-right: 30px solid #fff;
+}
+
+.modal-body .carousel-control-next .carousel-control-next-icon {
+    border-left: 30px solid #fff;
+}
+
+.modal-body .carousel-indicators button {
+    /* margin-bottom: 550px; */
+    opacity: 0;
+    background-color: transparent;
+}
+
+.modal-body .carousel-indicators button.active {
+    opacity: 1;
+    /* position: relative; */
+}
+
+.modal-body .carousel-indicators button.active::after {
+    position: absolute;
+    right: -500px;
+}
+
+.modal-body .carousel-indicators button[data-bs-slide-to="0"].active::after {
+    content: "1 of 6";
+
+}
+
+.modal-body .carousel-indicators button[data-bs-slide-to="1"].active::after {
+    content: "2 of 6";
+}
+
+.modal-body .carousel-indicators button[data-bs-slide-to="2"].active::after {
+    content: "3 of 6";
+}
+
+.modal-body .carousel-indicators button[data-bs-slide-to="3"].active::after {
+    content: "4 of 6";
+}
+
+.modal-body .carousel-indicators button[data-bs-slide-to="4"].active::after {
+    content: "5 of 6";
+}
+
+.modal-body .carousel-indicators button[data-bs-slide-to="5"].active::after {
+    content: "6 of 6";
+}
+
+/****************** End Portfolio ******************/
+/****************** Start Testimonials ******************/
+#Testimonials {
+    background-color: var(--fourthColor);
+}
+
+#Testimonials .carousel-item img {
+    width: 6.25rem;
+    height: 6.25rem;
+}
+
+#Testimonials .carousel-item p {
+    font-family: "Poppins" "sans-serif";
+    color: var(--thirdColor);
+    font-size: .9375rem;
+    line-height: 1.5rem;
+    word-spacing: .125rem;
+    font-weight: 400;
+}
+
+#Testimonials .carousel-item h4 {
+    font-family: "Montserrat" "sans-serif";
+    color: var(--mainColor);
+    font-size: 1rem;
+    font-size: 1rem;
+    line-height: 1.125rem;
+    font-weight: 600;
+}
+
+#Testimonials .carousel-item h5 {
+    font-family: "Poppins" "sans-serif";
+    color: var(--thirdColor);
+    font-size: .75rem;
+    line-height: 1.125rem;
+    font-weight: 600;
+}
+
+#Testimonials .carousel-indicators [data-bs-target] {
+    width: .625rem;
+    height: .625rem;
+}
+
+#Testimonials .carousel-indicators .active {
+    background-color: var(--thirdColor) !important;
+}
+
+#Testimonials .carousel-indicators button:hover {
+    background-color: var(--thirdColor) !important;
+}
+
+/****************** End Testimonials ******************/
+
+
+/****************** End Achievements ******************/
+#Achievements p,
+#Achievements i {
+    color: var(--mainColor);
+}
+
+#Achievements p {
+    font-family: "Montserrat" "sans-serif";
+    font-size: 1.875rem;
+    line-height: 2.0625rem;
+    font-weight: 900;
+}
+
+#Achievements h4 {
+    font-family: "Poppins" "sans-serif";
+    font-size: .9375rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+    color: var(--thirdColor);
+}
+
+/****************** End Achievements ******************/
+
+
+/****************** Start Taem ******************/
+#Team {
+    background-color: var(--fourthColor);
+}
+
+#Team .inner .layer {
+    background-color: rgba(255, 255, 255, .9);
+    inset: 30%;
+    opacity: 0;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+}
+
+#Team .inner .layer .icons>* {
+    width: 35px;
+    height: 35px;
+    background-color: var(--secondaryColor);
+}
+
+#Team .inner .layer .icons div {
+    transition: all .2s ease;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+}
+
+#Team .inner .layer .icons {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
+
+#Team .inner .layer .icons div:hover {
+    background-color: #fff;
+    border: solid 1px var(--secondaryColor);
+}
+
+#Team .inner .layer .icons div:hover i {
+    color: #1c1c1c !important;
+}
+
+#Team .inner .card:hover .layer {
+    opacity: 1;
+    inset: 5px;
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
+
+#Team .inner .card-img img {
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+}
+
+#Team .inner .card-img:hover img {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+#Team .inner .card .card-body {
+    font-family: "Montserrat" "sans-serif";
+    color: #fff;
+    background-color: #5B5B5B;
+}
+
+#Team .inner .card .card-body h4 {
+    font-size: 1.5625rem;
+    line-height: 1.75rem;
+    font-weight: 500;
+}
+
+#Team .inner .card .card-body h3 {
+    font-size: 1.25rem;
+    line-height: 1.375rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/****************** End Taem ******************/
+
+/****************** Start Contact ******************/
+/* #Contact .container {
+    width: 70%;
+} */
+#Contact .icons .icon{
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    width: 70px;
+    height: 70px;
+    color: var(--secondaryColor);
+    background-color: #e9e7e6;
+}
+#Contact .icons:hover i {
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    color: #fff;
+}
+#Contact .icons:hover .icon{
+    background-color: var(--secondaryColor);
+}
+
+#Contact .icons h3{
+    font-family: "Montserrat" "sans-serif";
+    font-size: 1rem;
+    line-height: 1.125rem;
+    font-weight: 700;
+    color: var(--mainColor);
+}
+#Contact .icons p{
+    font-family: "Poppins" "sans-serif";
+    font-size: .9375rem;
+    line-height: 1.5rem;
+    font-weight: 400;  
+    color: var(--thirdColor);  
+}
+#Contact form input,#Contact form textarea{
+    background-color: #F5F4F5;
+}
+#Contact form textarea{
+    max-height: 200px;
+}
+#Contact form button{
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+}
+#Contact form button:hover{
+    color: var(--secondaryColor) !important;
+    background-color: #fff !important;
+    border: solid 1px var(--secondaryColor);
+}
+/****************** End Contact ******************/
+
+/****************** Start Footer ******************/
+footer{
+    background-color: #1D1D1C;
+}
+footer p{
+    font-family: "Poppins""sans-serif";
+    font-size: .8125rem;
+    color: #748182;
+    line-height: 1.3125rem;
+    word-spacing: .125rem;
+    font-weight: 400;
+}
+/****************** End Footer ******************/
