@@ -10,6 +10,7 @@
 .container {
     /* width: 80%; */
 }
+
 /****************** Start Global Name of Sections ******************/
 #Portfolio h2,
 #Testimonials h2,
@@ -61,7 +62,215 @@ header .content p {
 header .content h3 {
     font-size: 3.75rem;
     font-weight: 200;
-    /* margin-bottom: 1.875rem; */
+    line-height: 4.5rem;
+    font-weight: 200;
+    font-family: "Montserrat" "sans-serif";
+}
+
+header .content h3::after {
+    content: "";
+    animation: typing 10s infinite ease-in-out;
+    -webkit-animation: typing 10s infinite ease-in-out;
+    font-size: 3.75rem;
+    line-height: 4.5rem;
+    font-weight: 400;
+    margin-left: 20px;
+}
+@keyframes typing {
+    0% {
+        content: "|";
+    }
+    2% {
+        content: "Larry Daniels|";
+    }
+
+    4% {
+        content: "Larry Daniel|";
+    }
+
+    6% {
+        content: "Larry Danie|";
+    }
+
+    8% {
+        content: "Larry Dani|";
+    }
+
+    10% {
+        content: "Larry Dan|";
+    }
+
+    12% {
+        content: "Larry Da|";
+    }
+
+    14% {
+        content: "Larry D|";
+    }
+
+    16% {
+        content: "Larry |";
+    }
+
+    18% {
+        content: "Larry|";
+    }
+
+    20% {
+        content: "Larr|";
+    }
+
+    22% {
+        content: "Lar|";
+    }
+
+    24% {
+        content: "La|";
+    }
+
+    26% {
+        content: "L|";
+    }
+
+    28% {
+        content: "|";
+    }
+
+    30% {
+        content: "D|";
+    }
+
+    32% {
+        content: "De|";
+    }
+
+    34% {
+        content: "Dev|";
+    }
+
+    36% {
+        content: "Deve|";
+    }
+
+    38% {
+        content: "Devel|";
+    }
+
+    40% {
+        content: "Develo|";
+    }
+
+    42% {
+        content: "Develop|";
+    }
+
+    44% {
+        content: "Develope|";
+    }
+
+    46% {
+        content: "Developer|";
+    }
+
+    48% {
+        content: "Develope|";
+    }
+
+    50% {
+        content: "Develop|";
+    }
+
+    52% {
+        content: "Develo|";
+    }
+
+    54% {
+        content: "Devel|";
+    }
+
+    56% {
+        content: "Deve|";
+    }
+
+    58% {
+        content: "Dev|";
+    }
+
+    60% {
+        content: "De|";
+    }
+
+    62% {
+        content: "D|";
+    }
+
+    64% {
+        content: "|";
+    }
+
+    66% {
+        content: "D|";
+    }
+
+    68% {
+        content: "De|";
+    }
+
+    70% {
+        content: "Des|";
+    }
+
+    72% {
+        content: "Desi";
+    }
+
+    74% {
+        content: "Desig|";
+    }
+
+    76% {
+        content: "Design";
+    }
+
+    78% {
+        content: "Designe|";
+    }
+
+    80% {
+        content: "Designer|";
+    }
+
+    82% {
+        content: "Designe|";
+    }
+
+    84% {
+        content: "Design|";
+    }
+
+    86% {
+        content: "Desig|";
+    }
+
+    88% {
+        content: "Desi|";
+    }
+
+    90% {
+        content: "Des|";
+    }
+
+    92% {
+        content: "De|";
+    }
+
+    94% {
+        content: "D|";
+    }
+
+    100% {
+        content: "|";
+    }
 }
 
 header .content .icons li {
@@ -70,57 +279,6 @@ header .content .icons li {
     cursor: pointer;
     background-color: rgba(0, 0, 0, .4);
     font-size: .875rem;
-}
-
-header .content .animationWords {
-    background-color: red;
-    width: 0px;
-    animation: changeWidth 6s infinite ease-in-out;
-    -webkit-animation: changeWidth 6s infinite ease-in-out;
-}
-
-header .content h3::after {
-    content: "";
-    transition: all 3s;
-    background-color: red;
-    animation: changeWord 1s infinite ease-in-out, changeWidth 1s infinite ease-in-out;
-    -webkit-animation: changeWord 1s infinite ease-in-out, changeWidth 1s infinite ease-in-out;
-    -webkit-transition: all 3s;
-    -moz-transition: all 3s;
-    -ms-transition: all 3s;
-    -o-transition: all 3s;
-}
-
-@keyframes changeWord {
-    0% {
-        content: "Larry Daniels";
-        /* width: 0; */
-    }
-
-    50% {
-        content: "Developer";
-        /* width: 50%; */
-    }
-
-    100% {
-        content: "Designer";
-        /* width: 100%; */
-    }
-}
-
-@keyframes changeWidth {
-    0% {
-
-        width: 0;
-    }
-
-    50% {
-        width: 50%;
-    }
-
-    100% {
-        width: 100%;
-    }
 }
 
 /****************** End Header ******************/
@@ -143,6 +301,7 @@ header .content h3::after {
     width: 100%;
     opacity: 1;
 }
+
 .navbar-nav .nav-link::after {
     content: "";
     position: absolute;
@@ -157,6 +316,7 @@ header .content h3::after {
     -ms-transition: all .5s ease-in-out;
     -o-transition: all .5s ease-in-out;
 }
+
 /****************** End Header ******************/
 
 /****************** Start About ******************/
@@ -245,43 +405,51 @@ header .content h3::after {
 
 
 /****************** Start Services ******************/
-#Services{
+#Services {
     background-color: var(--fourthColor);
 }
-#Services .content .icon{
+
+#Services .content .icon {
     width: 80px;
     height: 80px;
-    background-color:#e9e7e6;
-    
+    background-color: #e9e7e6;
+
 }
-#Services .content .icon,#Services .content .icon i{
+
+#Services .content .icon,
+#Services .content .icon i {
     transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     -ms-transition: all .5s ease-in-out;
     -o-transition: all .5s ease-in-out;
 }
-#Services .content:hover .icon{
+
+#Services .content:hover .icon {
     background-color: var(--secondaryColor) !important;
 }
-#Services .content:hover i{
-    color:#e9e7e6;
+
+#Services .content:hover i {
+    color: #e9e7e6;
 }
-#Services .content h3{
+
+#Services .content h3 {
     font-family: "Montserrat" "sans-serif";
     font-size: 1.125rem;
     line-height: 1.25rem;
     font-weight: 800;
     color: var(--mainColor);
 }
-#Services .content p{
-    font-family: "Poppins""sans-serif";
+
+#Services .content p {
+    font-family: "Poppins" "sans-serif";
     font-size: .875rem;
     line-height: 1.4375rem;
     word-spacing: .125rem;
     font-weight: 400;
     color: var(--thirdColor);
 }
+
 /****************** End Services ******************/
 
 
@@ -626,7 +794,7 @@ header .content h3::after {
 /* #Contact .container {
     width: 70%;
 } */
-#Contact .icons .icon{
+#Contact .icons .icon {
     transition: all 1s ease;
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
@@ -637,6 +805,7 @@ header .content h3::after {
     color: var(--secondaryColor);
     background-color: #e9e7e6;
 }
+
 #Contact .icons:hover i {
     transition: all 1s ease;
     -webkit-transition: all 1s ease;
@@ -645,55 +814,65 @@ header .content h3::after {
     -o-transition: all 1s ease;
     color: #fff;
 }
-#Contact .icons:hover .icon{
+
+#Contact .icons:hover .icon {
     background-color: var(--secondaryColor);
 }
 
-#Contact .icons h3{
+#Contact .icons h3 {
     font-family: "Montserrat" "sans-serif";
     font-size: 1rem;
     line-height: 1.125rem;
     font-weight: 700;
     color: var(--mainColor);
 }
-#Contact .icons p{
+
+#Contact .icons p {
     font-family: "Poppins" "sans-serif";
     font-size: .9375rem;
     line-height: 1.5rem;
-    font-weight: 400;  
-    color: var(--thirdColor);  
+    font-weight: 400;
+    color: var(--thirdColor);
 }
-#Contact form input,#Contact form textarea{
+
+#Contact form input,
+#Contact form textarea {
     background-color: #F5F4F5;
 }
-#Contact form textarea{
+
+#Contact form textarea {
     max-height: 200px;
     min-height: 120px;
 }
-#Contact form button{
+
+#Contact form button {
     transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     -ms-transition: all .5s ease-in-out;
     -o-transition: all .5s ease-in-out;
 }
-#Contact form button:hover{
+
+#Contact form button:hover {
     color: var(--secondaryColor) !important;
     background-color: #fff !important;
     border: solid 1px var(--secondaryColor);
 }
+
 /****************** End Contact ******************/
 
 /****************** Start Footer ******************/
-footer{
+footer {
     background-color: #1D1D1C;
 }
-footer p{
-    font-family: "Poppins""sans-serif";
+
+footer p {
+    font-family: "Poppins" "sans-serif";
     font-size: .8125rem;
     color: #748182;
     line-height: 1.3125rem;
     word-spacing: .125rem;
     font-weight: 400;
 }
+
 /****************** End Footer ******************/
