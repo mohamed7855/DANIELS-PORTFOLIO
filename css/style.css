@@ -662,6 +662,7 @@ header .content h3::after {
 }
 #Contact form textarea{
     max-height: 200px;
+    min-height: 120px;
 }
 #Contact form button{
     transition: all .5s ease-in-out;
