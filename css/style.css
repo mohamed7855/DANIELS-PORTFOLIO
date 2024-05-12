@@ -124,7 +124,7 @@ header .content h3::after {
 }
 
 /****************** End Header ******************/
-/****************** Start About ******************/
+/****************** Start Navbar ******************/
 .navbar-brand {
     font-family: "Montserrat" "sans-serif";
     font-size: 1.125rem;
@@ -151,8 +151,10 @@ header .content h3::after {
     top: 75%;
     background-color: var(--mainColor);
 }
+/****************** End Header ******************/
 
-#about .about-image figure::after {
+/****************** Start About ******************/
+#about .about-image::after {
     content: "";
     position: absolute;
     background-image: url(../imgs/dots.png);
