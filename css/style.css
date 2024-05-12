@@ -546,77 +546,65 @@ header .content .icons li {
     margin-top: 10px;
 }
 
-.modal-header {
-    padding-right: 115px;
-
+.modal .carousel-inner img {
+    /* padding: 25px; */
+    width: 75% !important;
+    margin: auto;
 }
-
+.modal-body {
+    padding: 0;
+    background-color: transparent !important;
+}
+.modal {
+    --bs-modal-bg: unset ;
+    --bs-modal-header-border-color:unset;
+    height: unset;
+}
+.modal-content {
+    border: none;
+};
+.modal-body .carousel-control-prev {
+    /* left: -30%; */
+}
+.modal .carousel-inner .carousel-item h5{
+    position: absolute;
+    color: var(--fourthColor);
+    right: 10px;
+    bottom: -25px;
+}
+.modal .carousel-item {
+    transition: unset;
+    -webkit-transition: unset;
+    -moz-transition: unset;
+    -ms-transition: unset;
+    -o-transition: unset;
+}
 .modal-header .btn-close {
     cursor: zoom-out;
 }
-
-.modal-body .carousel-control-prev {
-    left: -30%;
+.modal-header {
+    padding-right: 130px;
+}
+.modal {
+    height: 100vh !important;
+    /* background-color: red; */
+}
+.carousel-control-prev{
+    
 }
 
-.modal-body .carousel-control-next {
-    right: -30%;
-}
 
-.modal-body .carousel-control-prev .carousel-control-prev-icon,
-.modal-body .carousel-control-next .carousel-control-next-icon {
+.modal .modal-body .carousel-control-prev .carousel-control-prev-icon,
+.modal .modal-body .carousel-control-next .carousel-control-next-icon {
     background-image: unset;
-    border-top: 30px solid transparent;
-    border-bottom: 30px solid transparent;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
 }
-
-.modal-body .carousel-control-prev .carousel-control-prev-icon {
-    border-right: 30px solid #fff;
+.modal .modal-body .carousel-control-prev .carousel-control-prev-icon {
+    border-right: 20px solid #fff;
 }
-
-.modal-body .carousel-control-next .carousel-control-next-icon {
-    border-left: 30px solid #fff;
-}
-
-.modal-body .carousel-indicators button {
-    /* margin-bottom: 550px; */
-    opacity: 0;
-    background-color: transparent;
-}
-
-.modal-body .carousel-indicators button.active {
-    opacity: 1;
-    /* position: relative; */
-}
-
-.modal-body .carousel-indicators button.active::after {
-    position: absolute;
-    right: -500px;
-}
-
-.modal-body .carousel-indicators button[data-bs-slide-to="0"].active::after {
-    content: "1 of 6";
-
-}
-
-.modal-body .carousel-indicators button[data-bs-slide-to="1"].active::after {
-    content: "2 of 6";
-}
-
-.modal-body .carousel-indicators button[data-bs-slide-to="2"].active::after {
-    content: "3 of 6";
-}
-
-.modal-body .carousel-indicators button[data-bs-slide-to="3"].active::after {
-    content: "4 of 6";
-}
-
-.modal-body .carousel-indicators button[data-bs-slide-to="4"].active::after {
-    content: "5 of 6";
-}
-
-.modal-body .carousel-indicators button[data-bs-slide-to="5"].active::after {
-    content: "6 of 6";
+.modal .modal-body .carousel-control-next .carousel-control-next-icon {
+    border-left: 20px solid #fff;
 }
 
 /****************** End Portfolio ******************/
